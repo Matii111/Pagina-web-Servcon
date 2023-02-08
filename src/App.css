@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+/* WEBPAGE ITSELF */
+body {
+  background-color: white;
+}
+
+/* NAVIGATION BAR */
+.NavbarList {
+  margin: 0px;
+}
+
+.Navbar {
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px 2px rgba(100, 100, 100, 0.3);
+}
+
+.Navbar a {
+  float: left;
+  color: gray;
+  padding: 16px;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.Navbar a:hover {
+  background-color: gray;
+  color: white;
+}
+
+/* FOOTER */
+.Footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: white;
+  color: gray;
+  text-align: center;
+}
