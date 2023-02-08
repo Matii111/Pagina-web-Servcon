@@ -4,6 +4,13 @@ Este proyecto buscan implementar una solucion al requerimiento de pagina web par
 
 ## Imagenes para el proyecto
 
+
+## Paquetes requeridos
+
+```
+  npm install react-router-dom
+```
+
 ### Logo de la empresa
 
 <img  height=100px src= "https://raw.githubusercontent.com/Matii111/Pagina-web-Servcon/master/logoServcon512.png"/>
