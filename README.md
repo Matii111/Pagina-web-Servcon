@@ -6,3 +6,8 @@ Este proyecto buscan implementar una solucion al requerimiento de pagina web par
 
 ### Logo de la empresa
 
+<img  height=100px src= "https://raw.githubusercontent.com/Matii111/Pagina-web-Servcon/master/logoServcon512.png"/>
+
+### Icono para ventana de navegador
+
+<img  height=100px src= "https://github.com/Matii111/Pagina-web-Servcon/blob/master/servconico2.png?raw=true"/>
