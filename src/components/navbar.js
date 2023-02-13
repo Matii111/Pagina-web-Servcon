@@ -3,12 +3,6 @@ import React from "react";
 class Navbar extends React.Component {
     render() {
         return (<>
-    <div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
-    </div>
-
-        
-
             <div className="Navbar">
                 <a className="Logo" href="/home" rel="noreferrer noopener">
                     <img className="formatLogo" alt="logo"
