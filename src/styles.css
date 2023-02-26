@@ -49,10 +49,11 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'Roboto', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /* WEBPAGE ITSELF */
 .content body {
@@ -81,6 +82,7 @@ code {
   text-decoration: none;
   font-size: 16px;
   height: 70px;
+  font-family: 'Poppins';
 }
 
 .Navbar li {
@@ -116,6 +118,7 @@ code {
   color: white;
   padding: 16px;
   vertical-align: middle;
+  font-family: 'Poppins';
 }
 
 .FooterList a:hover {
@@ -136,28 +139,31 @@ code {
 @import "slick-carousel/slick/slick-theme.css";
 @import "slick-carousel/slick/slick.css";
 
-.slick-slider{
+.slick-slider {
   max-width: 50%;
-  margin: 0 auto;  
+  margin: 0 auto;
   padding-left: 10px;
 }
 
-.slick-slider img{
+.slick-slider img {
   max-height: 100%;
   max-width: 100%;
 }
 
 .slick-slider .slick-dots li button:before {
-  color: #000000; /* Cambiar este valor al color deseado */
+  color: #000000;
+  /* Cambiar este valor al color deseado */
 }
 
 .slick-slider .slick-dots li.slick-active button:before {
-  color: #000b4d; /* Cambiar este valor al color deseado */
+  color: #000b4d;
+  /* Cambiar este valor al color deseado */
 }
 
-.slick-prev:before, .slick-next:before{
-color: #000b4d;
-font-size: 30px;
+.slick-prev:before,
+.slick-next:before {
+  color: #000b4d;
+  font-size: 30px;
 }
 
 
@@ -176,6 +182,7 @@ font-size: 30px;
   text-align: justify;
   width: 100%;
   margin-top: 10%;
+  font-family: 'Poppins';
 }
 
 .resumen {
@@ -184,11 +191,19 @@ font-size: 30px;
   box-sizing: border-box;
 }
 
+.resumen label {
+  font-size: 40px;
+}
+
+.resumen p {
+  font-size: 18px;
+}
+
 .imagen-resumen {
-  width: 30%;
+  width: 50%;
   height: auto;
   float: right;
-  margin-left: 25%;
+  margin-left: 10%;
 }
 
 /* OFICINAS */
@@ -207,6 +222,21 @@ font-size: 30px;
   box-sizing: border-box;
 }
 
+.oficinas-map {
+  width: 50%;
+  padding-left: 10%;
+}
+
+.oficinas label{
+  font-family: 'Poppins';
+  font-size: 40px;
+}
+
+.oficinas li{
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
 /* IMAGEN AL FONDO DE LA PAGINA */
 .bottom-image {
   object-fit: cover;
@@ -214,27 +244,87 @@ font-size: 30px;
   height: 300px;
 }
 
-/* PLACEHOLDERS TO REMOVE */
-.mapa-placeholder {
-  width: 30%;
-  height: auto;
-  float: right;
-  margin-left: 25%;
+/* MAP CONFIG */
+.mapFormat {
+  height: 300px;
+  width: auto;
+  z-index: 2;
 }
 
+.mapContainer {
+  height: auto;
+  width: auto;
+  margin-top: 30px;
+  margin: 50px;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERYS */
+/* 
+tamanios incluidos: 
+-> mobile: 480px 
+-> tabletPortait: 768px
+-> tabletLandscape: 1024px 
+*/
 
 /* mobile-=-=-=-=-=-=-=-=-=-=-=-=-= */
 @media (max-width: 480px) {
-  .slick-slider{
+  .slick-slider {
     max-width: 80%;
-    margin: 0 auto;      
+    margin: 0 auto;
   }
+
   .Navbar a {
-    font-size: 12px;
     height: 70px;
-    padding: 10px;
+    padding: 5px;
+    float: none;
+    font-size: 12px;
+    width: 100%;
   }
+
+  .Navbar {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  .NavbarList {
+    display: flex;
+  }
+
+  .Navbar li {
+    margin-top: 20px;
+  }
+
+  .formatLogo {
+    margin-top: 10px;
+  }
+
+  .Navbar ul {
+    margin: 0px 0px 0px;
+    justify-content: center;
+    padding: 0%;
+  }
+
   .resumen-container {
     margin-bottom: 2%;
     text-align: justify;
@@ -243,13 +333,13 @@ font-size: 30px;
     margin-top: 15%;
     font-size: 14px;
   }
-  
+
   .resumen {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   .imagen-resumen {
     height: auto;
     align-items: center;
@@ -257,22 +347,42 @@ font-size: 30px;
     width: 100%;
     margin-bottom: 10%;
   }
-  .Footer a {
-  font-size: 12px;
-  padding: 0px;
-  margin: 0px;
+
+  .Footer {
+    text-align: center;
   }
-  .Footer ul{
-    padding: 0px;   
-    margin-left: auto; 
+
+  .FooterList .Logo {
+    display: block;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .Footer a {
+    font-size: 12px;
+    padding: 0px;
+    display: flex;
+  }
+
+  .Footer ul {
+    padding: 0px;
+    margin-left: auto;
     margin-right: auto;
   }
-  .Footer li{
+
+  .Footer li {
     margin-left: -30px;
+    display: block;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
   }
-  .Footer img{
-    margin-left: -20px;
+
+  .Footer img {
+    justify-content: center;
+    padding: 5px;
   }
+
   .oficinas-container {
     margin-bottom: 2%;
     text-align: justify;
@@ -281,35 +391,41 @@ font-size: 30px;
     margin-top: 15%;
     font-size: 14px;
   }
-  
+
   .oficinas {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
   }
-  
-  .mapa-placeholder {
+
+  .oficinas-map {
     height: auto;
     align-items: center;
     margin: auto;
     width: 100%;
     margin-bottom: 10%;
+    padding-left: 0%;
   }
-  .slick-prev:before,  .slick-next:before {
+
+  .slick-prev:before,
+  .slick-next:before {
     color: #ffffff;
-    font-size: 60px;    
-    }
+    font-size: 60px;
+  }
 }
+
 /* TabletPortrait-=-=-=-=-=-=-=-=-=-=-=-=-= */
 @media (max-width: 768px) {
-  .slick-slider{
+  .slick-slider {
     max-width: 84%;
-    margin: 0 auto;      
+    margin: 0 auto;
   }
+
   .Navbar a {
     font-size: 12px;
     height: 70px;
   }
+
   .resumen-container {
     margin-bottom: 2%;
     text-align: justify;
@@ -318,13 +434,13 @@ font-size: 30px;
     margin-top: 15%;
     font-size: 14px;
   }
-  
+
   .resumen {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   .imagen-resumen {
     height: auto;
     align-items: center;
@@ -332,10 +448,12 @@ font-size: 30px;
     width: 100%;
     margin-bottom: 10%;
   }
+
   .Footer a {
-  font-size: 12px;
-  margin-left: 50px;
+    font-size: 12px;
+    margin-left: 50px;
   }
+
   .oficinas-container {
     margin-bottom: 2%;
     text-align: justify;
@@ -344,31 +462,41 @@ font-size: 30px;
     margin-top: 15%;
     font-size: 14px;
   }
-  
+
   .oficinas {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
   }
-  
-  .mapa-placeholder {
+
+  .oficinas-map {
     height: auto;
     align-items: center;
     margin: auto;
     width: 100%;
     margin-bottom: 10%;
+    padding-left: 0%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #ffffff;
+    font-size: 20px;
   }
 }
+
 /* TabletLandscape-=-=-=-=-=-=-=-=-=-=-=-=-= */
 @media (max-width: 1024px) {
-  .slick-slider{
+  .slick-slider {
     max-width: 84%;
-    margin: 0 auto;      
+    margin: 0 auto;
   }
+
   .Navbar a {
     font-size: 12px;
     height: 70px;
   }
+
   .resumen-container {
     margin-bottom: 2%;
     text-align: justify;
@@ -377,13 +505,13 @@ font-size: 30px;
     margin-top: 15%;
     font-size: 14px;
   }
-  
+
   .resumen {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   .imagen-resumen {
     height: auto;
     align-items: center;
@@ -391,9 +519,11 @@ font-size: 30px;
     width: 100%;
     margin-bottom: 10%;
   }
+
   .Footer a {
-  font-size: 12px;
+    font-size: 12px;
   }
+
   .oficinas-container {
     margin-bottom: 2%;
     text-align: justify;
@@ -402,18 +532,25 @@ font-size: 30px;
     margin-top: 15%;
     font-size: 14px;
   }
-  
+
   .oficinas {
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
   }
-  
-  .mapa-placeholder {
+
+  .oficinas-map {
     height: auto;
     align-items: center;
     margin: auto;
     width: 100%;
     margin-bottom: 10%;
+    padding-left: 0%;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #ffffff;
+    font-size: 20px;
   }
 }

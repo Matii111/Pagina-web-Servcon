@@ -9,10 +9,10 @@ class Navbar extends React.Component {
                         src="https://raw.githubusercontent.com/Matii111/Pagina-web-Servcon/master/logoServcon512.png" />
                 </a>
                 <ul className="NavbarList">
-                    <a href="#inicio"><li>Inicio</li></a>
-                    <a href="#quienes-somos"><li>Quiénes somos</li></a>
-                    <a href="#portafolio"><li>Portafolio</li></a>
-                    <a href="#contacto"><li>Contacto</li></a>
+                    <a href="#inicio"><li>INICIO</li></a>
+                    <a href="#quienes-somos"><li>QUIÉNES SOMOS</li></a>
+                    <a href="#portafolio"><li>PORTAFOLIO</li></a>
+                    <a href="#contacto"><li>CONTACTO</li></a>
                 </ul>
             </div>
         </>
