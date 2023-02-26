@@ -44,6 +44,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #00549f;
 }
 
 code {
@@ -53,8 +54,10 @@ code {
 
 
 /* WEBPAGE ITSELF */
-body {
-  background-color: white;
+.content body{
+  background-color: red;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* NAVIGATION BAR */
@@ -120,11 +123,27 @@ margin-top: 0;
 
 /* LOADER */
 .loader{
-    flex: 1;
+    flex: 100;
     margin-top: 25%;
     justify-Content: center;
     align-Items:center;          
 }
 
 /* SLIDESHOW */
-@import "react-slideshow-image/dist/styles.css";
+@import 'react-slideshow-image/dist/styles.css';
+
+.each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+  margin-top: 30px;
+}
+
+.each-slide-effect span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
