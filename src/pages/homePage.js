@@ -4,8 +4,6 @@ import Footer from '../components/footer';
 import Slideshow from"../components/slides";
 
 import '../styles.css';
-import './homePage.css'
-
 
 
 class HomePage extends React.Component{
@@ -13,7 +11,8 @@ class HomePage extends React.Component{
         return(
             <>                        
       <div className="App">
-        <Navbar></Navbar>             
+        <Navbar></Navbar>       
+        <Slideshow></Slideshow>      
         <body>
 
           <div className="webpage-content">
