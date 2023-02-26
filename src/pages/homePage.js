@@ -20,7 +20,7 @@ class HomePage extends React.Component {
               <div className="resumen-container">
                 <div className="resumen">
                   <label for="texto-resumen">
-                    <b>RESUMEN DE LA EMPRESA:
+                    <b>RESUMEN DE LA EMPRESA
                     </b>
                   </label>
                   <hr></hr>
@@ -33,7 +33,7 @@ class HomePage extends React.Component {
               <div className="resumen-container">
                 <div className="resumen">
                   <label for="texto-resumen">
-                    <b>RESUMEN DE LA EMPRESA:
+                    <b>RESUMEN DE LA EMPRESA
                     </b>
                   </label>
                   <hr></hr>
@@ -46,7 +46,7 @@ class HomePage extends React.Component {
 
               <div className="oficinas-container">
                 <div className="oficinas">
-                  <label for="oficinas-list"><b>Oficinas:</b></label>
+                  <label for="oficinas-list"><b>Oficinas</b></label>
                   <hr></hr>
                   <ul className="oficinas-list">
                     <li>Valenzuela Castillo 1388-1330, Providencia, Región Metropolitana</li>

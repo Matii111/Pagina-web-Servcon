@@ -123,7 +123,12 @@ code {
 
 .FooterList a:hover {
   text-decoration: underline;
-  transition: .3s ease all;
+  transition: .6s ease all;
+}
+
+.Footer button{
+  background-color: transparent;
+  border: transparent;
 }
 
 
@@ -213,7 +218,7 @@ code {
   align-items: center;
   text-align: justify;
   width: 100%;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
 }
 
 .oficinas {

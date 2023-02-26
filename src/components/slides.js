@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import Slider from "react-slick";
 import "../styles.css";
 
-
-
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-
 function Slideshow() {
 
   const images = [
