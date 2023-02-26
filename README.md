@@ -4,9 +4,11 @@ Este proyecto buscan implementar una solucion al requerimiento de pagina web par
 
 ## Paquetes requeridos
 
-```
+``` 
   npm install react-router-dom
   npm install react-slick 
+  npm install typeface-poppins
+  npm install react-leaflet
 ```
 
 
