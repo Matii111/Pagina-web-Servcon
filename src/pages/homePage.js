@@ -44,6 +44,8 @@ class HomePage extends React.Component {
                 <img className="imagen-resumen" src="https://images.wallpaperscraft.com/image/single/landscape_usa_river_sky_malibu_california_clouds_hdr_nature_79461_1280x720.jpg" alt="sample-img"></img>
               </div>
 
+              <hr id="separador"></hr>
+
               <div className="oficinas-container">
                 <div className="oficinas">
                   <label for="oficinas-list"><b>Oficinas</b></label>

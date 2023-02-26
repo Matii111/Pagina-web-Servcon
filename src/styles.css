@@ -57,7 +57,6 @@ code {
 
 /* WEBPAGE ITSELF */
 .content body {
-  background-color: red;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -178,6 +177,11 @@ code {
   max-width: 80%;
 }
 
+#separador {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
 /* RESUMEN */
 .resumen-container {
   display: flex;
@@ -264,17 +268,90 @@ code {
   overflow: hidden;
 }
 
+/* PORTAFOLIO */
+.proyectos {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  text-align: justify;
+  width: 100%;
+  font-family: 'Poppins';
+  margin-bottom: 10%;
+}
 
+.proyectos-container {
+  margin-bottom: -8%;
+}
 
+.proyectos-container label{
+  font-family: 'Poppins';
+  font-size: 40px;
+}
 
+.imgs-proyectos {
+  width: 50%;
+  height: auto;
+}
 
+.texto-proyectos {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.txts-left {
+  float: left;
+}
 
+.txts-right {
+  float: right;
+}
 
+.imgs-left {
+  width: 50%;
+  height: auto;
+  float: left;
+  margin-right: 10%;
+}
 
+.imgs-right {
+  width: 50%;
+  height: auto;
+  float: right;
+  margin-left: 10%;
+}
 
+/* QUIENES SOMOS */
 
+.about {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  text-align: justify;
+  width: 100%;
+  font-family: 'Poppins';
+  margin-bottom: 10%;
+}
 
+.about-container {
+  margin-bottom: -8%;
+}
+
+.about-container label{
+  font-family: 'Poppins';
+  font-size: 40px;
+}
+
+.imgs-about {
+  width: 50%;
+  height: auto;
+}
+
+.texto-about {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
 
 
 
@@ -412,6 +489,40 @@ tamanios incluidos:
     padding-left: 0%;
   }
 
+  .proyectos {
+    margin-bottom: 2%;
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: 14px;
+  }
+
+  .imgs-proyectos {
+    height: auto;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .about {
+    margin-bottom: 2%;
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: 14px;
+  }
+
+  .imgs-about {
+    height: auto;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
   .slick-prev:before,
   .slick-next:before {
     color: #ffffff;
@@ -483,6 +594,40 @@ tamanios incluidos:
     padding-left: 0%;
   }
 
+  .proyectos {
+    margin-bottom: 2%;
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: 14px;
+  }
+
+  .imgs-proyectos {
+    height: auto;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .about {
+    margin-bottom: 2%;
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: 14px;
+  }
+
+  .imgs-about {
+    height: auto;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
   .slick-prev:before,
   .slick-next:before {
     color: #ffffff;
@@ -551,6 +696,40 @@ tamanios incluidos:
     width: 100%;
     margin-bottom: 10%;
     padding-left: 0%;
+  }
+
+  .proyectos {
+    margin-bottom: 2%;
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: 14px;
+  }
+
+  .imgs-proyectos {
+    height: auto;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .about {
+    margin-bottom: 2%;
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: 14px;
+  }
+
+  .imgs-about {
+    height: auto;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10%;
   }
 
   .slick-prev:before,
