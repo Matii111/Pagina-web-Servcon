@@ -5,6 +5,12 @@ import Slideshow from "../components/slides";
 import Map from "../components/maps";
 import '../styles.css';
 
+// TODO: Animaciones para los proyectos en pagina portafolioPage y AboutPage (animaciones de scroll)
+// TODO: Crear Popup para pagina de portafolio para ver mas imagenes
+// TODO: Realizar envio de correos mediante pagina de contacto
+// TODO: Agregar algun brackground en pagina de contacto
+// TODO: Agregar contacto en pagina de contacto
+
 
 class HomePage extends React.Component {
   render() {

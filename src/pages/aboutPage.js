@@ -5,48 +5,47 @@ import "../styles.css";
 
 class AboutPage extends React.Component {
     render() {
-      return (
-        <>
-            <Navbar></Navbar>
-            <body>
-                <div className="webpage-content">
+        return (
+            <>
+                <Navbar></Navbar>
+                <body>
+                    <div className="webpage-content">
 
-                    <div className="about-container">
+                        <div className="about-container">
 
-                        <div className="about">
-                            <img className="imgs-about imgs-left" src="https://images.wallpaperscraft.com/image/single/landscape_usa_river_sky_malibu_california_clouds_hdr_nature_79461_1280x720.jpg" alt="sample-img"></img>
-                            <div>
-                                <label for="about1">
-                                    <b>PLACEHOLDER 1</b>
-                                </label>
-                                <hr></hr>
-                                <p id="about1" className="texto-about txts-left">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
+                            <div className="about">
+                                <img className="imgs-about imgs-left" src="https://images.wallpaperscraft.com/image/single/landscape_usa_river_sky_malibu_california_clouds_hdr_nature_79461_1280x720.jpg" alt="sample-img"></img>
+                                <div>
+                                    <label for="about1">
+                                        <b>PLACEHOLDER 1</b>
+                                    </label>
+                                    <hr></hr>
+                                    <p id="about1" className="texto-about txts-left">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div className="about">
-                            <div>
-                                <label for="about2">
-                                    <b>PLACEHOLDER 2</b>
-                                </label>
-                                <hr></hr>
-                                <p id="about2" className="texto-about txts-right">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                </p>
+                            <div className="about">
+                                <div>
+                                    <label for="about2">
+                                        <b>PLACEHOLDER 2</b>
+                                    </label>
+                                    <hr></hr>
+                                    <p id="about2" className="texto-about txts-right">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                </div>
+                                <img className="imgs-about imgs-right" src="https://images.wallpaperscraft.com/image/single/landscape_usa_river_sky_malibu_california_clouds_hdr_nature_79461_1280x720.jpg" alt="sample-img"></img>
                             </div>
-                            <img className="imgs-about imgs-right" src="https://images.wallpaperscraft.com/image/single/landscape_usa_river_sky_malibu_california_clouds_hdr_nature_79461_1280x720.jpg" alt="sample-img"></img>
+
                         </div>
 
                     </div>
-
-                </div>
-            </body>
-            <Footer></Footer>
-        </>
-      );
+                </body>
+                <Footer></Footer>
+            </>
+        );
     }
-  }
-  export default AboutPage;
-  
+}
+export default AboutPage;

@@ -125,7 +125,7 @@ code {
   transition: .6s ease all;
 }
 
-.Footer button{
+.Footer button {
   background-color: transparent;
   border: transparent;
 }
@@ -236,12 +236,12 @@ code {
   padding-left: 10%;
 }
 
-.oficinas label{
+.oficinas label {
   font-family: 'Poppins';
   font-size: 40px;
 }
 
-.oficinas li{
+.oficinas li {
   font-family: 'Poppins';
   font-size: 18px;
 }
@@ -283,7 +283,7 @@ code {
   margin-bottom: -8%;
 }
 
-.proyectos-container label{
+.proyectos-container label {
   font-family: 'Poppins';
   font-size: 40px;
 }
@@ -337,7 +337,7 @@ code {
   margin-bottom: -8%;
 }
 
-.about-container label{
+.about-container label {
   font-family: 'Poppins';
   font-size: 40px;
 }
@@ -352,6 +352,87 @@ code {
   width: 100%;
   box-sizing: border-box;
 }
+
+/* PAGINA CONTACTOS -=-=-=-=-=-=-=-=-=-=*/
+.contact-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.label-box-container {
+  font-size: 40PX;
+  font-family: 'Poppins';
+  padding-right: 300px;
+}
+
+.contact-box .body-box-container {
+  border: 2px solid #000b4d;
+  display: block;
+}
+
+.input-box {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  box-sizing: border-box;
+  width: 97%;
+  border-radius: 7px;
+}
+
+.label-box {
+  font-family: 'Poppins';
+  padding: 10px;
+  font-style: unset;
+  font-size: 14px;
+}
+
+.button-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 30px;
+  line-height: 50px;
+  border-radius: 7px;
+  background-color: #000b4d;
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.contact-box hr {
+  margin-bottom: 30px;
+}
+
+.body-box-container textarea {
+  resize: vertical;
+  max-width: 97%;
+  min-height: 100px;
+  max-height: 150px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 10px;
+  display: block;
+  box-sizing: border-box;
+  width: 97%;
+  border-radius: 7px;
+}
+
+.input-box:hover {
+  background-color: rgb(231, 231, 231);
+  transition: .1s ease all;
+}
+
+.button-box:hover {
+  background-color: #000c4dde;
+  transition: .3s ease all;
+}
+
+
+
 
 
 
@@ -371,17 +452,34 @@ tamanios incluidos:
 
 /* mobile-=-=-=-=-=-=-=-=-=-=-=-=-= */
 @media (max-width: 480px) {
-  .slick-slider {
-    max-width: 80%;
-    margin: 0 auto;
+
+  /* CONTACT BOX CONFIG */
+  .label-box-container {
+    font-size: 40PX;
+    font-family: 'Poppins';
+    padding-right: 15px;
   }
 
+  .input-box {
+    width: 94%;
+  }
+
+  .body-box-container textarea {
+    width: 94%;
+  }
+
+  .button-box {
+    width: 81%;
+  }
+
+  /* NAVBAR CONFIG */
   .Navbar a {
     height: 70px;
     padding: 5px;
     float: none;
     font-size: 12px;
     width: 100%;
+    text-align: center;
   }
 
   .Navbar {
@@ -407,29 +505,7 @@ tamanios incluidos:
     padding: 0%;
   }
 
-  .resumen-container {
-    margin-bottom: 2%;
-    text-align: justify;
-    width: 100%;
-    display: block;
-    margin-top: 15%;
-    font-size: 14px;
-  }
-
-  .resumen {
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .imagen-resumen {
-    height: auto;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-    margin-bottom: 10%;
-  }
-
+  /* FOOTER CONFIG */
   .Footer {
     text-align: center;
   }
@@ -465,6 +541,7 @@ tamanios incluidos:
     padding: 5px;
   }
 
+  /* CONTENT CONFIG*/
   .oficinas-container {
     margin-bottom: 2%;
     text-align: justify;
@@ -523,53 +600,60 @@ tamanios incluidos:
     margin-bottom: 10%;
   }
 
+  .resumen-container {
+    margin-bottom: 2%;
+    text-align: justify;
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    font-size: 14px;
+  }
+
+  .resumen {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .imagen-resumen {
+    height: auto;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  /* SLIDER CONFIG */
   .slick-prev:before,
   .slick-next:before {
     color: #ffffff;
     font-size: 60px;
   }
+
+  .slick-slider {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
 }
 
 /* TabletPortrait-=-=-=-=-=-=-=-=-=-=-=-=-= */
 @media (max-width: 768px) {
-  .slick-slider {
-    max-width: 84%;
-    margin: 0 auto;
-  }
 
+  /* NAVBAR CONFIG */
   .Navbar a {
     font-size: 12px;
     height: 70px;
   }
 
-  .resumen-container {
-    margin-bottom: 2%;
-    text-align: justify;
-    width: 100%;
-    display: block;
-    margin-top: 15%;
-    font-size: 14px;
-  }
-
-  .resumen {
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .imagen-resumen {
-    height: auto;
-    align-items: center;
-    margin: auto;
-    width: 100%;
-    margin-bottom: 10%;
-  }
-
+  /* FOOTER CONFIG */
   .Footer a {
     font-size: 12px;
     margin-left: 50px;
   }
 
+  /* CONTENT CONFIG */
+
   .oficinas-container {
     margin-bottom: 2%;
     text-align: justify;
@@ -626,25 +710,6 @@ tamanios incluidos:
     margin: auto;
     width: 100%;
     margin-bottom: 10%;
-  }
-
-  .slick-prev:before,
-  .slick-next:before {
-    color: #ffffff;
-    font-size: 20px;
-  }
-}
-
-/* TabletLandscape-=-=-=-=-=-=-=-=-=-=-=-=-= */
-@media (max-width: 1024px) {
-  .slick-slider {
-    max-width: 84%;
-    margin: 0 auto;
-  }
-
-  .Navbar a {
-    font-size: 12px;
-    height: 70px;
   }
 
   .resumen-container {
@@ -670,9 +735,35 @@ tamanios incluidos:
     margin-bottom: 10%;
   }
 
+  /* SLIDER CONFIG */
+  .slick-prev:before,
+  .slick-next:before {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  .slick-slider {
+    max-width: 84%;
+    margin: 0 auto;
+  }
+}
+
+/* TabletLandscape-=-=-=-=-=-=-=-=-=-=-=-=-= */
+@media (max-width: 1024px) {
+
+  /* NAVBAR CONFIG */
+  .Navbar a {
+    font-size: 12px;
+    height: 70px;
+  }
+
+  /* FOOTER CONFIG */
+
   .Footer a {
     font-size: 12px;
   }
+
+  /* CONTENT CONFIG */
 
   .oficinas-container {
     margin-bottom: 2%;
@@ -688,6 +779,7 @@ tamanios incluidos:
     width: 100%;
     box-sizing: border-box;
   }
+
 
   .oficinas-map {
     height: auto;
@@ -732,9 +824,39 @@ tamanios incluidos:
     margin-bottom: 10%;
   }
 
+  .resumen-container {
+    margin-bottom: 2%;
+    text-align: justify;
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    font-size: 14px;
+  }
+
+  .resumen {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .imagen-resumen {
+    height: auto;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  /* SLIDER CONFIG */
   .slick-prev:before,
   .slick-next:before {
     color: #ffffff;
     font-size: 20px;
   }
+
+  .slick-slider {
+    max-width: 84%;
+    margin: 0 auto;
+  }
+
 }

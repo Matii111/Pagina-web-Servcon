@@ -1,4 +1,4 @@
-import { Audio } from  'react-loader-spinner'
+import { Audio } from 'react-loader-spinner'
 
 <Blocks
   visible={true}

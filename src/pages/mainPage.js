@@ -5,7 +5,8 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { Grid } from "react-loader-spinner";
 import { useState, useEffect } from "react";
 import PortfolioPage from "./portfolioPage";
-import AboutPage  from "./aboutPage";
+import AboutPage from "./aboutPage";
+import Contacto from "./contacto";
 
 function MainPage() {
     const [loading, setLoading] = useState(false)
@@ -13,7 +14,7 @@ function MainPage() {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        },1000)
+        }, 1000)
 
     }, [])
     return (
@@ -21,14 +22,15 @@ function MainPage() {
             {
                 loading ?
                     <Grid
-                    wrapperClass="loader"
-                    color="#00549f"/>
+                        wrapperClass="loader"
+                        color="#00549f" />
                     :
                     <Routes>
                         <Route path='/home' element={<HomePage />} />
                         <Route path='/' element={<Navigate replace to="/home" />} />
-                        <Route path='/quienes-somos' element={<AboutPage/>} />
-                        <Route path='/portafolio' element={<PortfolioPage/>} />
+                        <Route path='/quienes-somos' element={<AboutPage />} />
+                        <Route path='/portafolio' element={<PortfolioPage />} />
+                        <Route path='/contacto' element={<Contacto />} />
                     </Routes>
             }
         </div>
