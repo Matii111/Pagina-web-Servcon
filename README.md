@@ -6,6 +6,7 @@ Este proyecto buscan implementar una solucion al requerimiento de pagina web par
 
 ```
   npm install react-router-dom
+  npm install react-slick 
 ```
 
 
