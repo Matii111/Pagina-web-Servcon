@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Footer from '../components/footer';
 import "../styles.css";
+import isInViewport from "../operations/viewportChecker";
+import handleScroll from "../operations/scrollHandler";
+import midScroll from "../operations/midScroller";
 
 class AboutPage extends React.Component {
     render() {
@@ -12,6 +15,13 @@ class AboutPage extends React.Component {
                     <div className="webpage-content">
 
                         <div className="about-container">
+
+                            <div className="scroll-tip" onClick={midScroll}>
+
+                                <p>Haga click o baje para ver más</p>
+                                <i className="arrow-down"></i>
+
+                            </div>
 
                             <div className="about">
                                 <img className="imgs-about imgs-left" src="https://images.wallpaperscraft.com/image/single/landscape_usa_river_sky_malibu_california_clouds_hdr_nature_79461_1280x720.jpg" alt="sample-img"></img>
@@ -26,7 +36,7 @@ class AboutPage extends React.Component {
                                 </div>
                             </div>
 
-                            <div className="about">
+                            <div className="about hidden">
                                 <div>
                                     <label for="about2">
                                         <b>PLACEHOLDER 2</b>

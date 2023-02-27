@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Footer from '../components/footer';
 import "../styles.css";
+import isInViewport from "../operations/viewportChecker";
+import handleScroll from "../operations/scrollHandler";
+import midScroll from "../operations/midScroller";
 
 class PortfolioPage extends React.Component {
     render() {
@@ -12,6 +15,13 @@ class PortfolioPage extends React.Component {
                     <div className="webpage-content">
 
                         <div className="proyectos-container">
+
+                            <div className="scroll-tip" onClick={midScroll}>
+
+                                <p>Haga click o baje para ver más</p>
+                                <i className="arrow-down"></i>
+
+                            </div>
 
                             <div className="proyectos">
                                 <img className="imgs-proyectos imgs-left" src="https://images.wallpaperscraft.com/image/single/landscape_usa_river_sky_malibu_california_clouds_hdr_nature_79461_1280x720.jpg" alt="sample-img"></img>
@@ -26,7 +36,7 @@ class PortfolioPage extends React.Component {
                                 </div>
                             </div>
 
-                            <div className="proyectos">
+                            <div className="proyectos hidden">
                                 <div>
                                     <label for="proyecto2">
                                         <b>PROYECTO 2</b>
@@ -39,7 +49,7 @@ class PortfolioPage extends React.Component {
                                 <img className="imgs-proyectos imgs-right" src="https://images.wallpaperscraft.com/image/single/landscape_usa_river_sky_malibu_california_clouds_hdr_nature_79461_1280x720.jpg" alt="sample-img"></img>
                             </div>
 
-                            <div className="proyectos">
+                            <div className="proyectos hidden">
                                 <img className="imgs-proyectos imgs-left" src="https://images.wallpaperscraft.com/image/single/landscape_usa_river_sky_malibu_california_clouds_hdr_nature_79461_1280x720.jpg" alt="sample-img"></img>
                                 <div>
                                     <label for="proyecto3">
@@ -52,7 +62,7 @@ class PortfolioPage extends React.Component {
                                 </div>
                             </div>
 
-                            <div className="proyectos">
+                            <div className="proyectos hidden">
                                 <div>
                                     <label for="proyecto4">
                                         <b>PROYECTO 4</b>
@@ -68,6 +78,7 @@ class PortfolioPage extends React.Component {
                         </div>
 
                     </div>
+
                 </body>
                 <Footer></Footer>
             </>
