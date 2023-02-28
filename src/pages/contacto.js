@@ -8,6 +8,7 @@ class Contacto extends React.Component {
             <>
                 <div>
                     <Navbar />
+                    <div className="background-img"></div> 
                     <div className="contact-box">
                         <div>
                             <label className="label-box-container">

@@ -409,6 +409,20 @@ code {
 }
 
 /* PAGINA CONTACTOS -=-=-=-=-=-=-=-=-=-=*/
+.background-img {
+  background-image: url("https://www.wallpapertip.com/wmimgs/70-700344_4k-image-sample.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px) brightness(50%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  box-shadow: 0 0 50px 50px black;
+}
+
 .contact-box {
   align-items: center;
   display: flex;
@@ -419,11 +433,13 @@ code {
   font-size: 40PX;
   font-family: 'Poppins';
   padding-right: 300px;
+  color: white;
 }
 
 .contact-box .body-box-container {
   border: 2px solid #000b4d;
   display: block;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .input-box {
