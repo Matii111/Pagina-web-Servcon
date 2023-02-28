@@ -7,7 +7,6 @@ import '../styles.css';
 
 // TODO: Crear Popup para pagina de portafolio para ver mas imagenes
 // TODO: Realizar envio de correos mediante pagina de contacto
-// TODO: Agregar algun brackground en pagina de contacto
 // TODO: Agregar contacto en pagina de contacto
 
 

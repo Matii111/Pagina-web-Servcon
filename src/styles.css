@@ -429,6 +429,18 @@ code {
   justify-content: center;
 }
 
+.contact-info {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: white;
+  font-family: 'Poppins';
+}
+
+#number {
+  margin-top: -1%;
+  font-size: 14px;
+}
+
 .label-box-container {
   font-size: 40PX;
   font-family: 'Poppins';
@@ -472,10 +484,6 @@ code {
   font-family: 'Poppins';
   font-weight: 800;
   font-size: 17px;
-}
-
-.contact-box hr {
-  margin-bottom: 30px;
 }
 
 .body-box-container textarea {

@@ -11,11 +11,13 @@ class Contacto extends React.Component {
                     <div className="background-img"></div> 
                     <div className="contact-box">
                         <div>
-                            <label className="label-box-container">
+                            <label className="label-box-container" for="contact-info">
                                 CONTACTANOS
                             </label>
                             <hr>
                             </hr>
+                            <p className="contact-info">correo.de.ejemplo@servcon.cl</p>
+                            <p className="contact-info" id="number"> +56 9 XXXX XXXX</p>
                             <body className="body-box-container">
                                 <label className="label-box">
                                     Nombre
