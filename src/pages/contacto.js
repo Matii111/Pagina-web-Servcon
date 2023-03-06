@@ -20,34 +20,34 @@ class Contacto extends React.Component {
                             <p className="contact-info" id="number"> +56 9 XXXX XXXX</p>
                             <body className="body-box-container">
                                 <label className="label-box">
-                                    Nombre
+                                    Nombres
                                 </label>
-                                <input alt="nombre" type="text" className="input-box">
+                                <input alt="nombres" type="text" className="input-box" placeholder="John Smith">
                                 </input>
                                 <label className="label-box">
                                     E-mail
                                 </label>
-                                <input alt="email" type="email" className="input-box">
+                                <input alt="email" type="email" className="input-box" placeholder="johnsmith@example.com">
                                 </input>
                                 <label className="label-box">
                                     Comuna
                                 </label>
-                                <input alt="comuna" type="text" className="input-box">
+                                <input alt="comuna" type="text" className="input-box" placeholder="¿En cuál comuna reside usted?">
                                 </input>
                                 <label className="label-box">
                                     Teléfono
                                 </label>
-                                <input alt="telefono" type="text" className="input-box">
+                                <input alt="telefono" type="text" className="input-box" placeholder="¿Cuál es su número para contacto?">
                                 </input>
                                 <label className="label-box">
                                     Asunto
                                 </label>
-                                <input alt="asunto" type="text" className="input-box">
+                                <input alt="asunto" type="text" className="input-box" placeholder="¿Qué asunto desea tratar?">
                                 </input>
                                 <label className="label-box">
                                     Mensaje
                                 </label>
-                                <textarea alt="mensaje" type="text">
+                                <textarea alt="mensaje" type="text" placeholder="Escriba en esta casilla su mensaje.">
                                 </textarea>
                                 <button className="button-box">
                                     Enviar

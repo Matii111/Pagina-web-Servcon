@@ -7,8 +7,6 @@ import '../styles.css';
 
 // TODO: Crear Popup para pagina de portafolio para ver mas imagenes
 // TODO: Realizar envio de correos mediante pagina de contacto
-// TODO: Agregar contacto en pagina de contacto
-
 
 class HomePage extends React.Component {
   render() {
